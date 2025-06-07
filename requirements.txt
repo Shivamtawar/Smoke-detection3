@@ -7,3 +7,4 @@ torchvision==0.16.0+cpu
 numpy==1.24.3
 flask==2.3.3
 Pillow==10.3.0
+gunicorn==20.1.0
