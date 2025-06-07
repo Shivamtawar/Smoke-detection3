@@ -1,4 +1,9 @@
-torch==2.1.0
-torchvision==0.16.0
+# CPU-only PyTorch (much smaller than CUDA version)
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+--find-links https://download.pytorch.org/whl/cpu/torch_stable.html
+
+# Downgrade NumPy to fix compatibility
+numpy==1.24.3
 flask==2.3.3
 Pillow==10.3.0
