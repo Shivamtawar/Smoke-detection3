@@ -2,3 +2,6 @@ torch==2.7.1
 torchvision==0.22.1 
 numpy==2.1.1 
 matplotlib==3.9.2
+flask==2.3.3
+Pillow==10.3.0
+
