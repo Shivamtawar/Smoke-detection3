@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire-Smoke Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .error {
+            color: red;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fire-Smoke Classifier</h1>
+    <p>Upload an image (PNG, JPG, JPEG) to classify it as Fire, Smoke, or Neutral.</p>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".png,.jpg,.jpeg">
+        <br>
+        <input type="submit" value="Classify Image">
+    </form>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
